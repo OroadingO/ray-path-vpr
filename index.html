@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Ray-Path-Aware Virtual Point Removal on 2D Layer-Wise Nearest Point Map">
+  <meta name="keywords" content="LiDAR, Virtual Point Removal, Reflection, 3D Perception, ECCV 2026">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ray-Path-Aware Virtual Point Removal</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+
+      <div class="publication-venue">ECCV 2026 Accepted</div>
+
+      <h1 class="title publication-title">
+        Ray-Path-Aware Virtual Point Removal on<br>
+        2D Layer-Wise Nearest Point Map
+      </h1>
+
+      <div class="publication-authors">
+        <span class="author-block">
+          <a href="https://orcid.org/0009-0004-0706-6296">Dae Hyeon Jeon</a>
+        </span>
+        <span class="author-block">
+          <a href="https://orcid.org/0000-0002-3920-9608">Kyungdon Joo</a><sup>†</sup>
+        </span>
+        <span class="author-block">
+          <a href="https://orcid.org/0000-0003-2636-7444">Jae-Young Sim</a><sup>†</sup>
+        </span>
+      </div>
+
+      <div class="publication-affiliation">
+        Ulsan National Institute of Science and Technology (UNIST), Republic of Korea
+      </div>
+
+      <div class="publication-email">
+        {dhjeon, kyungdon, jysim}@unist.ac.kr<br>
+        <sup>†</sup> Corresponding authors
+      </div>
+
+      <div class="publication-links">
+        <!-- Update these links later when files are ready -->
+        <span class="button is-light is-rounded disabled-button">Paper Coming Soon</span>
+        <span class="button is-light is-rounded disabled-button">Code Coming Soon</span>
+        <span class="button is-light is-rounded disabled-button">Video Coming Soon</span>
+        <a class="button is-dark is-rounded" href="#bibtex">BibTeX</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section teaser-section">
+  <div class="container is-max-widescreen">
+    <img class="teaser-image" src="assets/teaser.jpg" alt="Teaser and method overview figure">
+    <p class="has-text-centered teaser-caption">
+      Overview of the proposed ray-path-aware virtual point removal framework.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="section-title has-text-centered">Abstract</h2>
+    <div class="content has-text-justified">
+      <p>
+        When LiDAR scans a scene with reflective materials, it often produces erroneous
+        virtual points, which resemble real structures and degrade downstream 3D perception.
+        Conventional methods rely on multi-stage pipelines that combine 3D surface reconstruction
+        with heuristic symmetry detection, making them highly sensitive to surface noise,
+        reflection irregularities, and accumulated estimation errors across stages.
+      </p>
+
+      <p>
+        To address this, we propose an end-to-end framework that reformulates virtual point
+        removal as ray-aligned geometric reasoning in the 2D equirectangular projection domain,
+        eliminating the dependency on explicit surface modeling. Specifically, we introduce a
+        Layer-Wise Nearest Point Map, which organizes multi-return LiDAR points by layer
+        correspondence rather than fixed distance intervals, preserving geometric continuity
+        between real and reflected surfaces.
+      </p>
+
+      <p>
+        Building on this representation, we propose a Ray-Path-Aware Attention mechanism that
+        constrains feature aggregation along physically plausible reflection trajectories derived
+        from surface normals and incident ray directions. This physically guided attention enables
+        the network to learn reflection-induced symmetry between real and reflected regions without
+        stage-wise surface estimation.
+      </p>
+
+      <p>
+        Extensive experiments on real-world LiDAR datasets demonstrate that our method achieves
+        more accurate and stable virtual point removal than prior symmetry-based approaches.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-widescreen">
+    <h2 class="section-title has-text-centered">Method Overview</h2>
+    <img class="content-image" src="assets/teaser.jpg" alt="Method overview">
+    <p class="has-text-centered image-caption">
+      Layer-Wise Nearest Mapping, Virtual Point Removal Network, and Ray-Path-Aware Attention.
+    </p>
+  </div>
+</section>
+
+<section class="section coming-soon-section">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="section-title">Results</h2>
+    <p>
+      Quantitative and qualitative results will be updated after final preparation.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="bibtex">
+  <div class="container is-max-desktop">
+    <h2 class="section-title has-text-centered">BibTeX</h2>
+    <pre><code>@inproceedings{jeon2026raypath,
+  title={Ray-Path-Aware Virtual Point Removal on 2D Layer-Wise Nearest Point Map},
+  author={Jeon, Dae Hyeon and Joo, Kyungdon and Sim, Jae-Young},
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>ECCV 2026 Project Page</p>
+  </div>
+</footer>
+
+</body>
+</html>

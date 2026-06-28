@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+.hero {
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.publication-venue {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: #f0f0f0;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.publication-title {
+  font-size: 2.55rem;
+  line-height: 1.18;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.publication-authors {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.author-block {
+  display: inline-block;
+  margin: 0 0.45rem;
+}
+
+.publication-affiliation {
+  font-size: 1.05rem;
+  margin-top: 0.4rem;
+}
+
+.publication-email {
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  color: #555;
+}
+
+.publication-links {
+  margin-top: 1.4rem;
+}
+
+.publication-links .button {
+  margin: 0.25rem;
+}
+
+.disabled-button {
+  cursor: default;
+  color: #555;
+}
+
+.teaser-section {
+  padding-top: 1rem;
+}
+
+.teaser-image,
+.content-image {
+  display: block;
+  width: 100%;
+  border-radius: 0.35rem;
+  border: 1px solid #e0e0e0;
+  background: white;
+}
+
+.teaser-caption,
+.image-caption {
+  color: #555;
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+}
+
+.section-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+.coming-soon-section p {
+  font-size: 1.05rem;
+  color: #555;
+}
+
+pre {
+  border-radius: 0.5rem;
+  background: #f7f7f7;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.footer {
+  padding: 2rem 1.5rem;
+  background: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  .publication-title {
+    font-size: 1.85rem;
+  }
+
+  .publication-authors {
+    font-size: 1rem;
+  }
+}
